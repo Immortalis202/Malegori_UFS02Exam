@@ -185,7 +185,7 @@ void order(int connfd){
         for(int j = 0; j < 20; j++){
             if (prices[i] == listino[j].price){
                 bzero(toSend,256);
-                sprintf(toSend, "%s:  %lf\n\n",listino[j].name,listino[j].price);
+                sprintf(toSend, "%20s:  %08.02lf\n\n",listino[j].name,listino[j].price);
                 write(connfd, toSend, 256);
             }
         }

@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include "utils.h" // read(), write(), close()
 #define MAX 80 
-#define PORT 5000
+#define PORT 8888
 #define SA struct sockaddr 
 
 // Function designed for chat between client and server. 
